@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 140"><ellipse cx="110" cy="132" rx="85" ry="7" fill="#10191b" opacity=".35"/><g transform="rotate(-7 110 70)"><path d="M90 16V7h40v9" fill="none" stroke="#e8bf99" stroke-width="5"/><rect x="40" y="17" width="140" height="115" rx="13" fill="#dd957d" stroke="#edbd98" stroke-width="2"/><rect x="48" y="24" width="124" height="100" rx="5" fill="#e5e4cc" stroke="#29382e" stroke-width="2"/><svg x="50" y="26" width="48" height="72" xmlns="http://www.w3.org/2000/svg" class="piece-illustration" viewBox="0 0 200 300" role="img" aria-label="Holiday headphones" fill="none" stroke="#29382e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><g class="object-art" transform="translate(200 0) rotate(90)">
+      <path d="M29 82v39c0 45 44 72 121 72s121-27 121-72V82h-34v39c0 27-31 44-87 44s-87-17-87-44V82Z" fill="#b6c9a5"/>
+      <path d="M41 122c0 38 43 58 109 58s109-20 109-58" stroke="#faf3dc" stroke-width="9"/>
+      <path d="M113 176q38 7 74-1" stroke="#29382e" stroke-width="17"/>
+      <path d="M114 174q37 7 72-1" stroke="#667759" stroke-width="10"/>
+      <path d="M23 11q29-9 56 0c15 24 14 87 0 109q-27 9-56 0C9 96 9 35 23 11Z" fill="#e1846c"/>
+      <path d="M221 11q29-9 56 0c14 24 14 85 0 109q-29 9-56 0c-14-22-15-85 0-109Z" fill="#e1846c"/>
+      <path d="M25 23q18-6 35-2c8 24 8 67 0 90q-17 4-35-2c-9-23-9-62 0-86Z" fill="#faf3dc" stroke-width="3.5"/>
+      <path d="M240 21q17-4 35 2c9 24 9 63 0 86q-18 6-35 2c-8-24-8-67 0-90Z" fill="#faf3dc" stroke-width="3.5"/>
+      <path d="M62 21q18 36 0 90m176-90q-18 36 0 90" stroke="#af6259" stroke-width="5"/>
+      <path d="M30 35v57m240-57v57" stroke="#c8b996" stroke-width="3" stroke-dasharray="3 6"/>
+      <circle cx="72" cy="66" r="7" fill="#e8c85e" stroke-width="2.5"/><circle cx="228" cy="66" r="7" fill="#e8c85e" stroke-width="2.5"/>
+      <path d="M39 16h13m196 0h13" stroke="#faf3dc" stroke-width="4"/>
+      <path d="M138 179h24" stroke="#e8c85e" stroke-width="3"/>
+    </g></svg><svg x="50" y="98" width="72" height="24" xmlns="http://www.w3.org/2000/svg" class="piece-illustration" viewBox="0 0 300 100" role="img" aria-label="Boarding pass" fill="none" stroke="#29382e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><g class="object-art" transform="translate(300 0) rotate(90)">
+      <path d="M15 8h70q8 0 8 9v196q-11 3-11 12t11 12v47q0 8-8 8H15q-8 0-8-8v-47q11-3 11-12t-11-12V17q0-9 8-9Z" fill="#faf3dc"/>
+      <path d="M15 8h70q8 0 8 9v39H7V17q0-9 8-9Z" fill="#b6c9a5"/>
+      <text x="50" y="29" text-anchor="middle" fill="#29382e" stroke="none" font-family="Georgia,serif" font-size="10" font-weight="bold" letter-spacing="1">ONE WAY</text>
+      <text x="50" y="44" text-anchor="middle" fill="#29382e" stroke="none" font-family="Georgia,serif" font-size="8">MONSTER AIR</text>
+      <path d="m51 69 5 26 23 18v7l-24-10-1 18 8 9v5l-12-5-12 5v-5l8-9-1-18-24 10v-7l23-18 5-26Z" fill="#e1846c" stroke-width="2.5"/>
+      <text x="50" y="165" text-anchor="middle" fill="#29382e" stroke="none" font-family="Georgia,serif" font-size="20" font-weight="bold" letter-spacing="1">M00N</text>
+      <path d="M22 178h56" stroke="#c7bda2" stroke-width="2"/>
+      <text x="24" y="192" fill="#29382e" stroke="none" font-family="Georgia,serif" font-size="8">GATE</text><text x="61" y="192" fill="#29382e" stroke="none" font-family="Georgia,serif" font-size="8">SEAT</text>
+      <text x="24" y="209" fill="#29382e" stroke="none" font-family="Georgia,serif" font-size="14" font-weight="bold">04</text><text x="60" y="209" fill="#29382e" stroke="none" font-family="Georgia,serif" font-size="14" font-weight="bold">13A</text>
+      <path d="M24 225h52" stroke="#bcb397" stroke-width="2" stroke-dasharray="3 5"/>
+      <path d="M22 241v35m5-35v35m8-35v35m5-35v35m6-35v35m9-35v35m5-35v35m5-35v35m9-35v35m5-35v35" stroke="#29382e" stroke-width="2"/>
+      <path d="M31 241v35m20-35v35m19-35v35" stroke="#29382e" stroke-width="4"/>
+      <path d="M13 65v86m74 94v34" stroke="white" stroke-width="3"/>
+    </g></svg><svg x="74" y="26" width="72" height="48" xmlns="http://www.w3.org/2000/svg" class="piece-illustration" viewBox="0 0 300 200" role="img" aria-label="Sunset scarf" fill="none" stroke="#29382e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><g class="object-art" transform="">
+      <path d="M114 9q52 7 94 1l78 1 3 75q-53 10-98 4l-1 90q-84 13-177 6l-2-77q47-7 96-3l1-77q0-16 6-20Z" fill="#e1846c"/>
+      <path d="M112 12q19 44 79 78l-1 90q-12-35-83-74l1-77q0-16 4-17Z" fill="#c76f61" stroke-width="3"/>
+      <path d="M125 13q17 29 66 61m-75-36q17 30 75 51" stroke="#faf3dc" stroke-width="12"/>
+      <path d="M217 12v73m27-73v73m27-72 1 72M37 109v73m27-74v75m27-75 1 75" stroke="#faf3dc" stroke-width="11"/>
+      <path d="M123 20q16 25 63 57M20 117q43-5 81-3m20 62 61-6m22-153q37 2 72-1" stroke="#f3b39a" stroke-width="2.6" stroke-dasharray="4 6"/>
+      <path d="m285 17 8 2m-7 11 7 1m-7 12 7 1m-7 12 7 1m-7 12 7 1m-8 11 8 2M13 119l-6 1m6 13-6 1m6 13-6 1m6 13-6 1m6 13-6 1" stroke="#29382e" stroke-width="3"/>
+      <path d="M126 118q18 6 30 16m-27-6q14 5 24 14" stroke="#b25c51" stroke-width="2.6"/>
+      <path d="m155 149 19-3 3 17-19 3Z" fill="#e8c85e" stroke-width="2"/>
+      <path d="m161 154 9-1m-9 5 6-1" stroke-width="1.8"/>
+    </g></svg><svg x="122" y="26" width="48" height="48" xmlns="http://www.w3.org/2000/svg" class="piece-illustration" viewBox="0 0 200 200" role="img" aria-label="Beach sandals" fill="none" stroke="#29382e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><g class="object-art" transform="translate(0 200) rotate(270)">
+      <path d="M181 111c22 4 17 60-4 74-22 12-117 8-144-1-34-11-32-53 3-64 37-12 116-15 145-9Z" fill="#bb9651"/>
+      <path d="M178 106c22 4 17 60-4 74-22 12-117 8-144-1-34-11-32-53 3-64 37-12 116-15 145-9Z" fill="#e8c85e"/>
+      <path d="m170 117-17 31 21 25" stroke="#29382e" stroke-width="19"/>
+      <path d="m170 117-17 31 21 25" stroke="#b6c9a5" stroke-width="11"/>
+      <path d="m153 148-15 1" stroke-width="6"/>
+      <path d="M125 120q-22-2-44 1m44 49q-25 5-44 1" stroke="#faf3dc" stroke-width="4"/>
+      <path d="M20 19C36-3 77 5 88 32c11 28 7 108-4 137-12 30-53 28-66 1C5 143 3 43 20 19Z" fill="#bc6658"/>
+      <path d="M19 15C35-4 76 6 86 31c11 28 7 105-4 134-12 30-53 28-66 1C3 139 3 38 19 15Z" fill="#e1846c"/>
+      <path d="M22 33c9-15 40-15 49 2m-49 86c-1 18 4 41 13 48m33-52q-1 32-11 45" stroke="#f3b39a" stroke-width="4"/>
+      <path d="m17 77 34-35 34 35" stroke="#29382e" stroke-width="19"/>
+      <path d="m17 77 34-35 34 35" stroke="#faf3dc" stroke-width="11"/>
+      <path d="M51 42V29" stroke-width="6"/>
+      <path d="m26 74 20-20m12 1 16 16" stroke="#ccbba0" stroke-width="2.5"/>
+      <path d="m35 141 17 7 13-8" stroke="#bc6658" stroke-width="3"/>
+    </g></svg><svg x="98" y="74" width="72" height="48" xmlns="http://www.w3.org/2000/svg" class="piece-illustration" viewBox="0 0 300 200" role="img" aria-label="Giant travel mug" fill="none" stroke="#29382e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><g class="object-art" transform="translate(300 0) rotate(90)">
+      <path d="M79 24h49q63 0 64 77 0 81-67 87H80v-39h42q31-3 31-47 0-39-29-39H80Z" fill="#e8c85e"/>
+      <path d="M98 37h27q53 0 53 65 0 66-52 72h-26" stroke="#faf3dc" stroke-width="5"/>
+      <path d="M13 30h76l-5 241q-1 18-33 19-31-1-33-19Z" fill="#e1846c"/>
+      <path d="M74 39 70 266q0 8-13 11" stroke="#bf6557" stroke-width="10"/>
+      <path d="M23 44 27 251" stroke="#f2b49b" stroke-width="6"/>
+      <path d="M10 16q39-14 80 0v20q-39 11-80 0Z" fill="#faf3dc"/>
+      <path d="M13 17q36 8 74 0m-67 7v8m12-6v8m13-6v8m13-8v8m13-10v8m12-10v7" stroke="#c5b89b" stroke-width="2.5"/>
+      <path d="M29 113q20-12 42 0l-2 78q-20 14-38 0Z" fill="#faf3dc" stroke-width="3"/>
+      <path d="M48 173v-35m0 5q-13-20-17-6 9-4 17 6Zm0 0q16-22 20-8-9-3-20 8Z" fill="#b6c9a5" stroke-width="2.8"/>
+      <path d="M37 179q12-7 25 0" stroke="#e1846c" stroke-width="3"/>
+      <path d="m28 265 43 0m-39 13q17 5 32 0" stroke="#faf3dc" stroke-width="3"/>
+      <path d="m167 78 0 32" stroke="#c5a146" stroke-width="3"/>
+    </g></svg></g><path d="m192 22 3-8m7 12 7-3" stroke="#e8ce83" stroke-width="2"/></svg>

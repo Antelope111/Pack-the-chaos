@@ -1,0 +1,651 @@
+{
+  "levels": {
+    "moonlight-check-in": {
+      "revision": 1,
+      "par": 7,
+      "pieceCount": 5,
+      "chapterId": "cats"
+    },
+    "eight-arm-weekend": {
+      "revision": 2,
+      "par": 7,
+      "pieceCount": 5,
+      "chapterId": "cats"
+    },
+    "snow-day-away": {
+      "revision": 2,
+      "par": 7,
+      "pieceCount": 5,
+      "chapterId": "cats"
+    },
+    "cats-the-cardboard-castle": {
+      "revision": 1,
+      "par": 7,
+      "pieceCount": 5,
+      "chapterId": "cats"
+    },
+    "cats-sunbeam-reserved": {
+      "revision": 1,
+      "par": 7,
+      "pieceCount": 5,
+      "chapterId": "cats"
+    },
+    "cats-paws-in-the-hallway": {
+      "revision": 1,
+      "par": 7,
+      "pieceCount": 5,
+      "chapterId": "cats"
+    },
+    "cats-the-yarn-detour": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "cats"
+    },
+    "cats-do-not-disturb": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "cats"
+    },
+    "cats-room-for-whiskers": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "cats"
+    },
+    "cats-nine-lives-one-box": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "cats"
+    },
+    "cats-the-biscuit-shift": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "cats"
+    },
+    "after-dark-departure": {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "cats"
+    },
+    "dogs-morning-roll-call": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "dogs"
+    },
+    "warm-weather-warning": {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "dogs"
+    },
+    "camp-coral": {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "dogs"
+    },
+    "dogs-trail-mixup": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "dogs"
+    },
+    "dogs-the-muddy-shortcut": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "dogs"
+    },
+    "dogs-treats-by-the-window": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "dogs"
+    },
+    "dogs-operation-fetch": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "dogs"
+    },
+    "dogs-the-blanket-fort": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "dogs"
+    },
+    "dogs-no-pup-left-behind": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "dogs"
+    },
+    "dogs-one-last-adventure": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "dogs"
+    },
+    "midnight-campout": {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "dogs"
+    },
+    "all-arms-aboard": {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "dogs"
+    },
+    "red-eye-upgrade": {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-lost-and-peculiar": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-cabin-baggage": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-the-umbrella-incident": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "the-great-thaw": {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-room-for-one-more": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "all-hands-on-deck": {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-nothing-to-declare": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-strange-bedfellows": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-the-impossible-layover": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "odd-almost-out-of-space": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "final-boarding-call": {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "odd"
+    },
+    "rooftops-01": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "rooftops"
+    },
+    "rooftops-02": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "rooftops"
+    },
+    "rooftops-03": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "rooftops"
+    },
+    "rooftops-04": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "rooftops"
+    },
+    "rooftops-05": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "rooftops-06": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "rooftops-07": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "rooftops-08": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "rooftops-09": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "rooftops-10": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "rooftops-11": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "rooftops-12": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "rooftops"
+    },
+    "seaside-01": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "seaside"
+    },
+    "seaside-02": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "seaside"
+    },
+    "seaside-03": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "seaside"
+    },
+    "seaside-04": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "seaside"
+    },
+    "seaside-05": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "seaside-06": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "seaside-07": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "seaside-08": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "seaside-09": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "seaside-10": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "seaside-11": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "seaside-12": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "seaside"
+    },
+    "bazaar-01": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "bazaar"
+    },
+    "bazaar-02": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "bazaar"
+    },
+    "bazaar-03": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "bazaar"
+    },
+    "bazaar-04": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "bazaar"
+    },
+    "bazaar-05": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "bazaar-06": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "bazaar-07": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "bazaar-08": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "bazaar-09": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "bazaar-10": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "bazaar-11": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "bazaar-12": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "bazaar"
+    },
+    "aurora-01": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "aurora"
+    },
+    "aurora-02": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "aurora"
+    },
+    "aurora-03": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "aurora"
+    },
+    "aurora-04": {
+      "revision": 1,
+      "par": 8,
+      "pieceCount": 6,
+      "chapterId": "aurora"
+    },
+    "aurora-05": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    },
+    "aurora-06": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    },
+    "aurora-07": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    },
+    "aurora-08": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    },
+    "aurora-09": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    },
+    "aurora-10": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    },
+    "aurora-11": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    },
+    "aurora-12": {
+      "revision": 1,
+      "par": 9,
+      "pieceCount": 7,
+      "chapterId": "aurora"
+    }
+  },
+  "dailyEpoch": "2026-10-26",
+  "daily": [
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    },
+    {
+      "revision": 2,
+      "par": 8,
+      "pieceCount": 6
+    },
+    {
+      "revision": 2,
+      "par": 9,
+      "pieceCount": 7
+    }
+  ]
+}

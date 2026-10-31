@@ -1,0 +1,115 @@
+/* A keepsake at the end of a journey, with room for a little signature. */
+#win-dialog.victory-dialog{
+  --victory-accent:#a35e39;
+  --victory-soft:#f5e3c8;
+  --victory-line:#d9bd93;
+  --victory-detail:#d79c66;
+  width:min(610px,calc(100vw - 32px));
+  max-height:calc(100dvh - 32px);
+  padding:21px 23px 18px;
+  border-radius:17px;
+  background:#f5f0e2;
+  box-shadow:0 22px 80px #23302340,6px 7px 0 #26362b20;
+  scrollbar-width:thin;
+  scrollbar-color:var(--victory-line) transparent;
+  overscroll-behavior:contain;
+}
+#win-dialog[data-theme="dogs"]{--victory-accent:#497766;--victory-soft:#e2ebdb;--victory-line:#b0c6ad;--victory-detail:#87a995}
+#win-dialog[data-theme="odd"]{--victory-accent:#7c658c;--victory-soft:#ece2ef;--victory-line:#c9b7d1;--victory-detail:#ae94bf}
+.victory-dialog .modal-close{z-index:3;display:grid;place-items:center;width:33px;height:33px;right:11px;top:8px;border:1px solid transparent;border-radius:50%;padding:0;color:#6e7562;font-size:24px;line-height:1;background:#f5f0e2e8}
+.victory-dialog .modal-close:hover{border-color:var(--victory-line);background:#fffaf0}
+.victory-dialog .modal-kicker{margin:0 34px 13px 1px;font:8px/1.5 "Courier New",monospace;letter-spacing:1.6px;color:var(--victory-accent)}
+.victory-card{position:relative;isolation:isolate;overflow:hidden;border:1px solid var(--victory-line);outline:1px solid #fffaf0;outline-offset:-5px;border-radius:11px;background:radial-gradient(ellipse at 50% 12%,#fffdf480 0,transparent 67%),linear-gradient(180deg,var(--victory-soft),#fffaf0 69%);padding:0 24px 15px;text-align:center;box-shadow:0 3px 0 #6b66420a}
+.victory-card:before,.victory-card:after{content:"✧";position:absolute;z-index:-1;top:47%;color:var(--victory-detail);font-size:25px;line-height:1;opacity:.6}
+.victory-card:before{left:17px;transform:rotate(-12deg)}
+.victory-card:after{right:17px;top:57%;font-size:19px;transform:rotate(14deg)}
+.victory-scene{position:relative;z-index:1;margin:0 -24px;height:138px;overflow:hidden;pointer-events:none}
+.victory-scene:empty{display:none}
+.victory-scene>svg{display:block;width:100%;height:100%;overflow:visible}
+.victory-edition{position:relative;display:table;max-width:100%;margin:0 auto 10px;padding:5px 12px;border:1px solid var(--victory-line);border-radius:20px;background:#fffaf0a6;color:var(--victory-accent);font:8px/1.35 "Courier New",monospace;letter-spacing:1.2px;text-transform:uppercase;overflow-wrap:anywhere}
+#win-dialog .victory-card h2{font-size:34px;line-height:1.05;letter-spacing:-1.1px;text-wrap:balance;margin:0;color:var(--ink)}
+#win-dialog .victory-card #win-copy{max-width:390px;margin:7px auto 10px;font-size:10px;line-height:1.55;color:#7b806c;text-wrap:balance}
+.victory-quote{position:relative;max-width:440px;margin:12px auto 9px;padding:0 8px;font:italic 20px/1.3 Georgia,"Times New Roman",serif;letter-spacing:-.35px;color:var(--victory-accent);text-wrap:balance;overflow-wrap:anywhere}
+.victory-quote:before{content:"“"}.victory-quote:after{content:"”"}
+.victory-dedication{max-width:100%;margin:0 auto 12px;font:9px/1.5 "Courier New",monospace;letter-spacing:.15px;color:#858470;overflow-wrap:anywhere;white-space:pre-wrap}
+.victory-card .win-rating{font-size:24px;line-height:1.05;letter-spacing:5px;color:#a47c34}
+.victory-card .win-rating small{font:8px/1.4 "Courier New",monospace;letter-spacing:.2px;color:#788269;margin-top:5px}
+.victory-card .win-record{margin:5px 0 0;font-size:9px;line-height:1.4;min-height:0;color:#7d846e}
+.victory-personalize{padding:13px 1px 11px}
+.victory-personalize>label{font-size:10px;font-weight:700;letter-spacing:.1px}
+.victory-personalize>small{font-size:9px;font-weight:400;color:#91927c;margin-left:6px}
+.name-field{display:flex;align-items:stretch;gap:7px;margin-top:6px}
+.name-field input{display:block;flex:1;min-width:0;width:100%;height:40px;border:1px solid #c8c9b4;border-radius:6px;background:#fffaf0;padding:8px 11px;font-size:16px;color:var(--ink);box-shadow:inset 0 1px 2px #515c3b06}
+.name-field input::placeholder{font-size:12px;color:#969780;opacity:1}
+.name-field input:focus-visible{outline:2px solid var(--victory-accent);outline-offset:2px;border-color:var(--victory-accent)}
+.name-field button{flex-shrink:0;min-width:55px;padding:7px 10px;border:1px solid #c8c9b4;border-radius:6px;background:transparent;color:#7a8069;font-size:10px}
+.name-field button:hover{background:#ececdd;border-color:#aab79d}
+.name-field button:disabled{opacity:.45}
+#name-note{margin:6px 0 0;color:#8d907a;font-size:8px;line-height:1.5}
+.victory-dialog .win-receipt{gap:12px;padding:10px 1px;margin:0 0 12px;border-color:#cbd0b9}
+.victory-dialog .win-receipt span{font-size:6px;line-height:1.3;letter-spacing:1px;margin-bottom:4px}
+.victory-dialog .win-receipt b{font-size:10px;line-height:1.35;overflow-wrap:anywhere}
+.victory-dialog .win-next{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:8px}
+.victory-dialog .win-next .solid-btn,.victory-dialog .win-next .retry-btn{margin:0;min-height:43px;padding:10px 12px;font-size:9px;line-height:1.4;letter-spacing:.55px;border-radius:6px}
+.victory-dialog .win-next .solid-btn{background:var(--ink);border-color:var(--ink)}
+.victory-dialog .win-next .solid-btn:hover{background:#455b43}
+.victory-dialog .win-next .retry-btn{background:#fbf7e880}
+.victory-dialog .win-next .retry-btn:hover{background:#e8eddd}
+.victory-dialog .win-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:9px 0 0}
+.victory-dialog .win-actions button{display:flex;align-items:center;justify-content:center;gap:4px;min-height:39px;padding:6px 4px;border:1px solid transparent;border-radius:5px;color:#6f7e64;font-size:9px;line-height:1.4;text-align:center}
+.victory-dialog .win-actions button:hover{border-color:#c9d0b8;background:#eeefdf}
+.victory-dialog #save-victory{color:var(--victory-accent);font-weight:700;background:#fffaf070;border-color:var(--victory-line)}
+.victory-dialog #save-victory:hover{background:#fffaf0}
+.victory-dialog .share-status{min-height:0;margin:4px 0 0;font-size:9px;line-height:1.45;overflow-wrap:anywhere}
+.victory-dialog .share-status:empty{display:none}
+.victory-dialog #share-fallback{margin-top:9px;font-size:11px;min-height:112px}
+#win-dialog[data-featured="false"]{width:min(480px,calc(100vw - 32px))}
+#win-dialog[data-featured="false"] .victory-scene{height:84px}
+#win-dialog[data-featured="false"] .victory-card{padding-bottom:13px}
+#win-dialog[data-featured="false"] .victory-card h2{font-size:29px}
+#win-dialog[data-featured="false"] .victory-quote{font-size:17px;line-height:1.35;margin:10px auto 8px}
+#win-dialog[data-featured="false"] .victory-edition{font-size:7px;margin-bottom:8px}
+#win-dialog[data-featured="false"] .victory-dedication{font-size:8px;margin-bottom:10px}
+#win-dialog[open] .victory-scene>svg{animation:victory-arrive .45s cubic-bezier(.2,.7,.2,1) both}
+#win-dialog[open] .victory-edition{animation:victory-seal .36s .12s cubic-bezier(.2,.8,.3,1.15) both}
+@keyframes victory-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes victory-seal{from{opacity:0;transform:scale(.95) rotate(-3deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+@media(max-width:580px){
+  #win-dialog.victory-dialog,#win-dialog[data-featured="false"]{width:calc(100vw - 22px);max-height:calc(100dvh - 22px);padding:18px 14px 13px;border-radius:14px;box-shadow:0 15px 60px #23302340}
+  .victory-dialog .modal-close{right:7px;top:5px;width:33px;height:33px}
+  .victory-dialog .modal-kicker{font-size:7px;letter-spacing:1.1px;margin-bottom:11px}
+  .victory-card{padding:0 15px 13px;border-radius:9px}
+  .victory-scene{margin:0 -15px;height:108px}
+  .victory-edition{font-size:7px;letter-spacing:.9px;padding:4px 10px;margin-bottom:9px}
+  #win-dialog .victory-card h2{font-size:29px;letter-spacing:-.8px}
+  #win-dialog .victory-card #win-copy{font-size:9px;line-height:1.5;margin:7px auto 10px}
+  .victory-quote{font-size:20px;line-height:1.25;margin:10px auto 9px;padding:0 5px;letter-spacing:-.4px}
+  .victory-dedication{font-size:8px;line-height:1.5;margin-bottom:10px}
+  .victory-card:before{left:9px;font-size:18px}.victory-card:after{right:9px;font-size:16px}
+  .victory-card .win-rating{font-size:23px}.victory-card .win-rating small{font-size:7px;line-height:1.45}
+  .victory-card .win-record{font-size:8px;margin-top:5px}
+  .victory-personalize{padding:12px 1px 10px}.victory-personalize>label{font-size:10px}.victory-personalize>small{font-size:8px}
+  .name-field{gap:6px}.name-field input{height:41px;padding:8px 10px}.name-field input::placeholder{font-size:11px}.name-field button{min-width:53px;font-size:10px}
+  #name-note{font-size:8px;line-height:1.4}
+  .victory-dialog .win-receipt{padding:9px 1px;margin-bottom:10px;gap:9px}.victory-dialog .win-receipt b{font-size:9px}.victory-dialog .win-receipt span{font-size:6px;letter-spacing:.65px}
+  .victory-dialog .win-next{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:7px}
+  .victory-dialog .win-next .solid-btn,.victory-dialog .win-next .retry-btn{min-height:43px;padding:9px 8px;font-size:8px;letter-spacing:.3px}
+  .victory-dialog .win-actions{gap:3px;margin-top:8px}.victory-dialog .win-actions button{min-height:41px;padding:5px 3px;font-size:8px;line-height:1.4}
+  #win-dialog[data-featured="false"] .victory-scene{height:75px}#win-dialog[data-featured="false"] .victory-card h2{font-size:27px}
+  #win-dialog[data-featured="false"] .victory-quote{font-size:18px}
+}
+@media(max-width:350px){
+  #win-dialog.victory-dialog{padding-left:11px;padding-right:11px}
+  .victory-scene{height:93px}.victory-card{padding-left:12px;padding-right:12px}.victory-scene{margin-left:-12px;margin-right:-12px}
+  #win-dialog .victory-card h2{font-size:26px}.victory-quote{font-size:18px}.victory-edition{font-size:6px;letter-spacing:.8px}
+  .victory-dialog .win-actions button{font-size:7px}.victory-dialog .win-receipt b{font-size:8px}
+}
+@media(min-width:581px) and (max-height:760px){
+  #win-dialog.victory-dialog{padding-top:18px;padding-bottom:14px}
+  .victory-scene{height:108px}.victory-card{padding-bottom:12px}.victory-edition{margin-bottom:7px;padding-top:4px;padding-bottom:4px}
+  #win-dialog .victory-card h2{font-size:31px}.victory-quote{margin-top:9px;margin-bottom:8px;font-size:19px}.victory-dedication{margin-bottom:9px}
+  .victory-personalize{padding-top:11px;padding-bottom:10px}.victory-dialog .win-receipt{padding-top:9px;padding-bottom:9px}
+}
+@media(prefers-reduced-motion:reduce){
+  #win-dialog[open] .victory-scene>svg,#win-dialog[open] .victory-edition{animation:none;transform:none}
+}

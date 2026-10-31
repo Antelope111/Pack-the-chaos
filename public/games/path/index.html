@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10131b">
+  <title>一步不差 · 小游戏实验室</title>
+  <style>
+    :root{color-scheme:dark;--bg:#10131b;--panel:#191d27;--lime:#d9ff68;--text:#f5f6f1;--muted:#9299ac;--line:#303645}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;user-select:none;-webkit-user-select:none}button,a{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offset:4px}button:disabled{opacity:.35;cursor:default}.shell{max-width:1080px;margin:0 auto;padding:32px 30px 50px}.topbar{display:flex;align-items:center;justify-content:space-between;font-size:12px;letter-spacing:1px;color:var(--muted)}.back{display:inline-flex;align-items:center;gap:10px;letter-spacing:0}.back:hover{color:var(--lime)}.logo-mark{color:var(--lime);font-size:16px;margin-right:8px}.layout{display:grid;grid-template-columns:310px minmax(300px,1fr);gap:64px;align-items:center;margin-top:58px}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;color:var(--lime);margin-bottom:19px}.intro h1{font-size:48px;letter-spacing:-2px;margin:0 0 17px;font-weight:750}.intro .lead{font-size:16px;line-height:1.9;color:#aeb5c4;max-width:300px;margin:0 0 30px}.tag{border:1px solid #424a31;background:#212824;color:var(--lime);font-size:11px;padding:6px 9px;border-radius:6px}.rules{margin-top:36px;border-top:1px solid var(--line);padding-top:22px}.rules h2{font-size:12px;letter-spacing:1px;margin:0 0 14px;color:#cbd0da}.rule{font-size:13px;line-height:1.8;color:var(--muted);margin:8px 0;display:flex;gap:10px}.rule b{font-size:11px;color:var(--lime);font-weight:500;padding-top:2px}.note{color:#687186;font-size:11px;line-height:1.8;margin-top:24px}.game{width:100%;max-width:500px;justify-self:center}.leveltop{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:17px}.levelname{font-size:20px;font-weight:650}.levelmeta{color:var(--muted);font-size:11px;margin-top:7px;letter-spacing:.2px}.timer{font-variant-numeric:tabular-nums;font-size:20px;letter-spacing:1px;color:#c5ccd8}.levels{display:flex;gap:7px;margin-bottom:19px}.level-dot{height:5px;flex:1;border:0;padding:0;background:#303644;border-radius:4px;position:relative}.level-dot::before{content:"";position:absolute;inset:-8px 0}.level-dot.done{background:#758e43}.level-dot.active{background:var(--lime)}.board-wrap{position:relative}.board{display:grid;gap:8px;padding:12px;background:#161b25;border:1px solid #2d3444;border-radius:18px;aspect-ratio:1;width:100%;touch-action:none;position:relative;isolation:isolate}.connector{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;overflow:visible}.cell{border:1px solid #2b3241;border-radius:10px;background:#202633;position:relative;z-index:2;display:flex;align-items:center;justify-content:center;color:#738098;font-size:clamp(17px,2.4vw,26px);font-weight:600;min-width:0;padding:0;touch-action:none;transition:background .12s,border-color .12s,color .12s;isolation:isolate}.cell.anchor{color:#e2e9d9;border-color:#5c6842;background:#252c2c}.cell.visited{background:#34472f;border-color:#607f3a;color:#dfefc0}.cell.head{background:var(--lime);border-color:var(--lime);color:#182011;box-shadow:0 0 0 3px #d9ff6814}.cell.hint{animation:pulse 1s ease-in-out infinite;border:2px solid var(--lime);color:var(--lime)}.cell span{z-index:2}.cell .start-label{position:absolute;bottom:5px;font-size:8px;letter-spacing:1px;color:currentColor;opacity:.7}.cell.error{animation:shake .24s linear;border-color:#ff927e;background:#593430}.progressrow{display:flex;align-items:center;justify-content:space-between;margin-top:17px;font-size:12px;color:var(--muted)}.progressrow strong{font-weight:600;color:var(--text)}.progressbar{height:3px;background:#2c3240;margin-top:12px;border-radius:4px;overflow:hidden}.progressbar i{display:block;height:100%;background:var(--lime);border-radius:4px;transition:width .15s}.message{min-height:53px;padding:15px 0 11px;font-size:12px;line-height:1.7;color:#9da8bb}.message.good{color:var(--lime)}.message.warn{color:#ffb39b}.controls{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:8px}.btn{height:43px;border:1px solid #343c4d;border-radius:9px;color:#d9dfe8;background:#1a202c;font-size:12px;display:flex;align-items:center;justify-content:center;gap:7px}.btn:hover{border-color:#71834d}.btn.primary{background:var(--lime);border-color:var(--lime);color:#1d2515;font-weight:650}.btn .symbol{font-size:17px;line-height:1}.footerrow{display:flex;justify-content:space-between;align-items:center;margin-top:18px;color:#667187;font-size:10px}.next-link{color:#b6c3a1;background:none;border:0;padding:5px 0;font-size:11px}.next-link:hover{color:var(--lime)}.complete{position:absolute;inset:0;background:#0b1116e8;z-index:5;border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;backdrop-filter:blur(7px);padding:20px}.complete[hidden]{display:none}.win-icon{width:52px;height:52px;border:1px solid #718849;color:var(--lime);border-radius:50%;display:grid;place-items:center;font-size:24px;margin:0 auto 18px}.complete h2{font-size:27px;letter-spacing:-.6px;margin:0 0 10px}.complete p{color:#929eaf;font-size:12px;line-height:1.7;margin:0 0 22px}.win-stats{display:flex;gap:30px;justify-content:center;margin-bottom:25px}.win-stats b{font-size:20px;color:var(--lime);font-weight:500;font-variant-numeric:tabular-nums}.win-stats small{display:block;color:#7b879b;font-size:10px;margin-top:7px}.win-actions{display:flex;gap:8px}.win-actions .btn{min-width:110px;padding:0 15px}.statuslive{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@keyframes pulse{50%{background:#4a582f;box-shadow:0 0 12px #d9ff6826}}@keyframes shake{25%,75%{transform:translateX(-2px)}50%{transform:translateX(2px)}}@media(max-width:760px){.shell{padding:22px 22px 30px;max-width:540px}.topbar{font-size:10px}.layout{display:block;margin-top:34px}.intro .eyebrow{font-size:10px;margin-bottom:10px}.intro h1{font-size:35px;letter-spacing:-1px;margin-bottom:10px}.intro .lead{font-size:13px;line-height:1.7;max-width:none;margin-bottom:16px}.tag{display:none}.rules{display:none}.note{display:none}.game{margin-top:27px;max-width:none}.levelname{font-size:17px}.timer{font-size:18px}.levelmeta{font-size:10px}.board{gap:7px;padding:10px;border-radius:15px}.cell{font-size:22px;border-radius:8px}.cell .start-label{font-size:7px;bottom:3px}.levels{margin-bottom:17px}.mobile-rules{display:block!important;color:#69778c;font-size:10px;line-height:1.8;margin-top:16px}.message{font-size:11px;min-height:55px;padding-top:13px}}@media(max-width:355px){.shell{padding:18px 15px}.board{gap:5px;padding:8px}.cell{font-size:19px}.controls{gap:6px}.btn{font-size:11px}.win-stats{gap:23px}.complete h2{font-size:23px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="back" href="../../index.html"><span aria-hidden="true">←</span> 返回实验室</a><span><span class="logo-mark">✳</span>PLAY / LAB</span></header>
+    <section class="layout">
+      <div class="intro">
+        <div class="eyebrow">02 / FIND YOUR FLOW</div>
+        <h1>一步不差</h1>
+        <p class="lead">从 1 出发，让每一个数字，<br>都找到自己的位置。</p>
+        <span class="tag">逻辑解谜 · 6 个精选关卡</span>
+        <div class="rules">
+          <h2>沿着数字，铺满棋盘</h2>
+          <p class="rule"><b>01</b><span>从亮起的 1 开始，拖动或逐格点击，<br>每走一格，数字增加 1。</span></p>
+          <p class="rule"><b>02</b><span>只能上下左右，不能重复经过。<br>在正确的步数经过预设数字。</span></p>
+          <p class="rule"><b>03</b><span>填满全部格子即可通关。<br>沿原路退回，或点击「撤销」调整。</span></p>
+        </div>
+        <p class="note">每一步，都有新的可能。<br>卡住时，提示会为你指出下一步。</p>
+      </div>
+      <div class="game">
+        <div class="leveltop"><div><div class="levelname" id="levelName">01 · 找到节奏</div><div class="levelmeta" id="levelMeta">4 × 4 · 16 个位置</div></div><div class="timer" id="timer">00:00</div></div>
+        <nav class="levels" id="levels" aria-label="选择关卡"></nav>
+        <div class="board-wrap">
+          <div class="board" id="board" aria-label="一步不差棋盘"></div>
+          <div class="complete" id="complete" hidden role="dialog" aria-modal="true" aria-labelledby="winTitle">
+            <div><div class="win-icon">✓</div><h2 id="winTitle">每一步，都刚刚好。</h2><p id="winSubtitle">所有数字已经连成一条完整轨迹。</p><div class="win-stats"><div><b id="winTime">00:00</b><small>用时</small></div><div><b id="winMoves">15</b><small>前进步数</small></div><div><b id="winHints">0</b><small>使用提示</small></div></div><div class="win-actions"><button class="btn" id="replayBtn">再走一次</button><button class="btn primary" id="winNextBtn">下一关 →</button></div></div>
+          </div>
+        </div>
+        <div class="progressrow"><span>已连接 <strong id="progress">1 / 16</strong></span><span id="nextNumber">下一格 2</span></div>
+        <div class="progressbar"><i id="progressFill" style="width:6.25%"></i></div>
+        <div class="message" id="message" role="status">从 1 出发，试着走到旁边的一格。</div>
+        <div class="controls"><button class="btn primary" id="hintBtn"><span class="symbol">✧</span> 提示一步</button><button class="btn" id="undoBtn"><span class="symbol">↶</span> 撤销</button><button class="btn" id="resetBtn"><span class="symbol">↻</span> 重来</button></div>
+        <div class="footerrow"><span>卡住时，试试「提示一步」</span><button class="next-link" id="nextBtn">下一关 →</button></div>
+        <p class="mobile-rules" style="display:none">上下左右 · 不走重复格 · 按步数经过预设数字 · 必须铺满<br>拖动或逐格点击；沿已走的路线退回，可撤回至该格。</p>
+      </div>
+    </section>
+    <span class="statuslive" id="live" aria-live="polite"></span>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

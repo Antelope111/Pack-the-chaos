@@ -1,0 +1,44 @@
+怪奇装箱 / Pack the Chaos — 源码交接说明
+版本日期：2026-10-30
+源代码提交：ea5390b46844f5dde7f19d4033195164cf8753ec
+
+本包包含完整前端、社区 API、数据库结构及迁移、依赖锁文件和构建脚本。
+当前内容：7 大章、84 个主线关卡、28 个轮换 Daily 布局、成就日历、唯一昵称和排行榜。
+新增主题装扮：屋顶头灯/月亮吊坠、海滨墨镜/条纹领巾、夜市小贩帽/灯笼挂饰、极光耳罩/围巾。
+配饰动画、头像、胜利卡片均已更新，游戏页已移除 Play Lab 返回入口。
+为保持完整项目结构，包内同时保留之前的另外三款小游戏。
+
+一、快速试玩前端（不需要安装 Node 依赖）
+解压后直接打开 public/games/packing/index.html。
+推荐也可在项目目录启动静态服务：
+  python3 -m http.server 8765 --directory public
+访问 http://localhost:8765/games/packing/
+此方式可玩关卡，保存浏览器本地进度；不提供社区排行榜服务。
+
+二、完整服务（含本地排行榜）
+需要 Node.js >=22.13、npm，以及首次安装依赖时可联网。
+在解压的 pack-the-chaos 目录执行：
+  npm run install:ci
+  npm run build
+  node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_colorful_frog_thor.sql
+  npm start -- --port 8765
+访问 http://localhost:8765/games/packing/
+迁移命令只在新建本地数据库时执行一次。数据库初始化后，可用 npm run dev 进行源码开发。
+修改关卡数据后，先执行 node scripts/generate-packing-catalog.mjs，再构建。
+
+三、主要文件
+public/games/packing/levels.js：关卡和求解逻辑
+public/games/packing/game.js：游戏交互
+public/games/packing/characters.js：猫狗轮廓、主题配饰和头像
+public/games/packing/progress.css：章节样式及配饰动画
+public/games/packing/victory.js：结算卡片与图片导出
+public/games/packing/achievements.js：成就和 Daily 日历
+lib/community-server.ts：名字查重、成绩同步及排行榜
+app/api/community/：社区接口路由
+drizzle/：数据库迁移
+
+四、独立部署
+静态游戏可把 public 目录部署到静态托管；完整社区服务需兼容 Cloudflare Workers 和 D1 的部署环境。
+.openai/hosting.json 保留原站点项目标识以说明来源；另建网站时应通过 Sites 为自己的新站点生成配置，不能把原项目标识作为新站点使用。
+源代码包不包含 node_modules、构建缓存、Git 历史、本地数据库、玩家数据或访问凭据。
+源码不包含线上已有的排行榜数据；本地运行从独立数据库开始。

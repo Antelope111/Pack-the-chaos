@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10131b">
+  <title>反弹实验室 · AI Game Jam</title>
+  <style>
+    :root{color-scheme:dark;--bg:#10131b;--panel:#181d27;--line:#2c3341;--muted:#929bad;--lime:#d9ff68;--white:#f4f6fa}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--white);padding:10px 15px;transition:background .15s,transform .15s}button:hover{background:#293142}button:active{transform:scale(.97)}button:focus-visible,a:focus-visible{outline:3px solid var(--lime);outline-offset:4px}.primary{background:var(--lime);border-color:var(--lime);color:#151b0b;font-weight:750}.primary:hover{background:#e5ff9b}.shell{max-width:1020px;margin:auto;padding:24px 28px 32px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.back{color:#b6becc;text-decoration:none;font-size:13px}.back:hover{color:var(--white)}.tag{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--muted)}.layout{display:grid;grid-template-columns:minmax(300px,420px) 1fr;gap:56px;align-items:center}.eyebrow{color:var(--lime);letter-spacing:2px;font-size:11px;font-weight:700}.title{font-size:39px;line-height:1.3;letter-spacing:-1px;margin:12px 0}.subtitle{font-size:16px;color:var(--muted);margin:0 0 28px}.rule{display:flex;gap:12px;margin:18px 0;color:#bcc4d2}.rule b{display:block;color:var(--white);margin-bottom:2px;font-weight:600}.rule-num{font-size:11px;border:1px solid #3e4930;color:var(--lime);width:27px;height:27px;display:grid;place-items:center;border-radius:50%;flex:none;margin-top:2px}.divider{height:1px;background:var(--line);margin:28px 0}.keys{display:inline-block;font-size:11px;color:#b8c0cf;border:1px solid #4b5363;border-radius:5px;padding:1px 7px;margin:0 3px}.note{color:var(--muted);font-size:12px}.stats{display:grid;grid-template-columns:repeat(3,1fr);margin:0 0 12px}.stat{padding:0 15px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat-label{font-size:10px;letter-spacing:1px;color:var(--muted)}.stat-value{font-size:27px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.4}.stat-value.lime{color:var(--lime)}.board{position:relative;aspect-ratio:420/600;border:1px solid #30394b;border-radius:20px;overflow:hidden;background:#141a25;box-shadow:0 20px 70px #0003}.board canvas{width:100%;height:100%;display:block;touch-action:none;user-select:none}.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:25px;background:linear-gradient(#10131b44,#10131be8);text-align:center;pointer-events:auto}.overlay[hidden]{display:none}.overlay-content{max-width:290px}.orb{font-size:38px;width:74px;height:74px;border:1px solid #d9ff6840;border-radius:50%;display:grid;place-items:center;color:var(--lime);margin:0 auto 23px;box-shadow:0 0 50px #d9ff680d}.overlay h2{font-size:26px;letter-spacing:-.5px;margin:0 0 9px}.overlay p{color:#b2bdce;font-size:13px;line-height:1.8;margin:0 0 24px}.overlay .primary{width:100%;padding:13px 20px}.micro{font-size:10px!important;color:#7e8a9f!important;margin:14px 0 0!important}.controls{display:flex;gap:8px;margin-top:12px}.controls button{flex:1;font-size:12px;padding:10px 8px}.controls button:last-child{flex:0 0 74px}.status{font-size:11px;color:var(--muted);text-align:center;margin:12px 0 0;min-height:18px}.mobile-head{display:none}.footer{color:#5e697b;font-size:10px;letter-spacing:1px;margin-top:28px}.tip{border-left:2px solid var(--lime);padding:3px 0 3px 15px;color:#b9c3d2;font-size:13px}.tip strong{color:var(--lime);font-weight:600}
+    @media(max-width:760px){.shell{max-width:470px;padding:16px 18px 24px}.topbar{margin-bottom:18px}.layout{display:block}.desktop-info{display:none}.mobile-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.mobile-head h1{font-size:23px;margin:0}.mobile-head span{font-size:11px;color:var(--muted)}.stat-value{font-size:23px}.board{width:100%;max-width:max(217px,calc(70svh - 179px));aspect-ratio:420/600;margin:auto}.stats{max-width:420px;margin:0 auto 10px}.controls{max-width:420px;margin:10px auto 0}.footer{display:none}.status{margin-top:8px}}
+    @media(prefers-reduced-motion:reduce){button{transition:none}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <nav class="topbar"><a class="back" href="../../index.html">← 返回试玩大厅</a><span class="tag">01 / ARCADE LAB</span></nav>
+  <div class="mobile-head"><h1>反弹实验室<span style="display:block;margin-top:2px">接住每一次可能</span></h1><span>鼠标 · 触屏 · 方向键</span></div>
+  <div class="layout">
+    <section aria-label="游戏区域">
+      <div class="stats" aria-live="off">
+        <div class="stat"><div class="stat-label">本局得分</div><div id="score" class="stat-value lime">000</div></div>
+        <div class="stat"><div class="stat-label">连续接球</div><div id="combo" class="stat-value">0</div></div>
+        <div class="stat"><div class="stat-label">个人纪录</div><div id="best" class="stat-value">000</div></div>
+      </div>
+      <div class="board" id="board">
+        <canvas id="game" width="420" height="600" tabindex="0" aria-label="反弹接球游戏。左右移动挡板，将小球反弹到上方绿色靶区。空格开始或暂停。"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-content"><div class="orb" id="overlay-icon">↗</div><h2 id="overlay-title">让下一拍更漂亮</h2><p id="overlay-copy">左右移动挡板，接住小球。<br>用挡板边缘改变方向，瞄准绿色靶区。</p><button id="start" class="primary">开始实验 →</button><p class="micro" id="overlay-foot">单局挑战 · 没有时间限制</p></div>
+        </div>
+      </div>
+      <div class="controls"><button id="pause" aria-label="暂停游戏">Ⅱ 暂停</button><button id="restart">↻ 重新开始</button><button id="sound" aria-pressed="true">♪ 音效开</button></div>
+      <p class="status" id="status" aria-live="polite">鼠标 / 手指左右移动 · 命中绿色靶区 +10</p>
+    </section>
+    <aside class="desktop-info">
+      <div class="eyebrow">DEMO 01 · 一拍上头</div><h1 class="title">反弹实验室</h1><p class="subtitle">接住每一次可能。</p>
+      <div class="tip">一次接住只是开始。<br><strong>把下一次反弹，打到想去的地方。</strong></div>
+      <div class="divider"></div>
+      <div class="rule"><span class="rule-num">01</span><div><b>先稳稳接住</b>鼠标或手指左右移动，接住每一球。接球 +1 分，落空即结束。</div></div>
+      <div class="rule"><span class="rule-num">02</span><div><b>让落点决定方向</b>击中挡板左侧向左，右侧向右。越靠近边缘，反弹角度越大。</div></div>
+      <div class="rule"><span class="rule-num">03</span><div><b>追着亮点打</b>命中绿色靶区 +10 分。随着接球次数增加，小球会逐渐加速。</div></div>
+      <div class="divider"></div><p class="note"><span class="keys">←</span><span class="keys">→</span> 移动挡板　<span class="keys">Space</span> 暂停 / 继续</p><p class="note">最佳成绩保存在这台设备。<br>提示：移动到落点的侧边，试着主动改变球路。</p>
+      <div class="footer">AI GAME JAM · QUICK PLAY PROTOTYPE</div>
+    </aside>
+  </div>
+</main>
+<script>
+(() => {
+  'use strict';
+  const canvas = document.getElementById('game');
+  const ctx = canvas.getContext('2d');
+  const ui = Object.fromEntries(['score','combo','best','overlay','overlay-title','overlay-copy','overlay-icon','overlay-foot','start','pause','restart','sound','status'].map(id => [id,document.getElementById(id)]));
+  const W=420,H=600,LEFT=16,RIGHT=404,TOP=78,PADDLE_Y=535,PADDLE_W=90,R=8;
+  let state='ready',score=0,catches=0,target=1,best=0,oldBest=0,sound=true,audioCtx=null;
+  let paddle=210,desired=210,ball={x:210,y:460,vx:65,vy:-245},trail=[],particles=[],labels=[],flash=0,time=0,last=0,accumulator=0;
+  const keys={left:false,right:false};
+  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  try{best=Number(localStorage.getItem('aj-pong-best')||0)||0;}catch(e){}
+  ui.best.textContent=String(best).padStart(3,'0');
+  function clamp(v,a,b){return Math.min(b,Math.max(a,v));}
+  function resize(){const d=Math.min(window.devicePixelRatio||1,2);canvas.width=W*d;canvas.height=H*d;ctx.setTransform(d,0,0,d,0,0);}
+  window.addEventListener('resize',resize);resize();
+  function audioInit(){if(!sound)return;try{if(!audioCtx){const AC=window.AudioContext||window.webkitAudioContext;if(AC)audioCtx=new AC();}if(audioCtx&&audioCtx.state==='suspended')audioCtx.resume();}catch(e){}}
+  function tone(freq,duration=.07,type='sine',volume=.055){if(!sound||!audioCtx)return;try{const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type=type;o.frequency.setValueAtTime(freq,audioCtx.currentTime);o.frequency.exponentialRampToValueAtTime(freq*.8,audioCtx.currentTime+duration);g.gain.setValueAtTime(volume,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+duration);o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+duration);}catch(e){}}
+  function sync(){ui.score.textContent=String(score).padStart(3,'0');ui.combo.textContent=catches;ui.best.textContent=String(best).padStart(3,'0');}
+  function burst(x,y,color,n=12){if(reducedMotion)return;for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,s=40+Math.random()*130;particles.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s,life:.35+Math.random()*.3,max:.65,color});}}
+  function floating(x,y,text,color='#d9ff68'){labels.push({x,y,text,color,life:.8});}
+  function startGame(){audioInit();state='playing';score=0;catches=0;target=1;oldBest=best;paddle=210;desired=210;ball={x:210,y:440,vx:80,vy:-245};particles=[];trail=[];labels=[];flash=0;accumulator=0;ui.overlay.hidden=true;ui.pause.textContent='Ⅱ 暂停';ui.status.textContent='接稳小球，再瞄准绿色靶区。';sync();tone(470,.09);canvas.focus({preventScroll:true});}
+  function overlay(title,copy,button,icon,foot){ui['overlay-title'].textContent=title;ui['overlay-copy'].innerHTML=copy;ui.start.textContent=button;ui['overlay-icon'].textContent=icon;ui['overlay-foot'].textContent=foot;ui.overlay.hidden=false;}
+  function pauseGame(){if(state==='playing'){state='paused';keys.left=keys.right=false;ui.pause.textContent='▶ 继续';overlay('休息一拍','球会等你。<br>准备好，就接着打。','继续实验 →','Ⅱ','按空格也可继续');}else if(state==='paused'){state='playing';ui.overlay.hidden=true;ui.pause.textContent='Ⅱ 暂停';accumulator=0;audioInit();}else if(state==='ready'||state==='over'){startGame();}}
+  function finish(){state='over';keys.left=keys.right=false;tone(150,.28,'triangle',.06);best=Math.max(best,score);try{localStorage.setItem('aj-pong-best',String(best));}catch(e){}sync();ui.pause.textContent='▶ 开始';const fresh=score>oldBest;overlay(fresh?'新纪录，漂亮！':'差一点，再来一拍',`本局 <strong style="color:#d9ff68;font-size:22px">${score}</strong> 分 · 连续接住 ${catches} 球<br>${fresh?'下次，试着超越现在的自己。':'试试用挡板边缘，改变下一球的方向。'}`,'再试一次 →',fresh?'✦':'↻',`个人纪录 ${best} 分 · 按空格重新开始`);ui.status.textContent=fresh?'新纪录已保存在这台设备。':'每一次反弹，都是下一次机会。';}
+  function pointer(e){if(e.pointerType==='touch')e.preventDefault();const b=canvas.getBoundingClientRect();desired=clamp((e.clientX-b.left)/b.width*W,LEFT+PADDLE_W/2,RIGHT-PADDLE_W/2);if(state==='playing')paddle=desired;}
+  canvas.addEventListener('pointerdown',e=>{pointer(e);audioInit();try{canvas.setPointerCapture(e.pointerId);}catch(err){}});
+  canvas.addEventListener('pointermove',pointer);
+  window.addEventListener('keydown',e=>{if(e.code==='ArrowLeft'||e.code==='KeyA'){e.preventDefault();keys.left=true;}if(e.code==='ArrowRight'||e.code==='KeyD'){e.preventDefault();keys.right=true;}if(e.code==='Space'&&!e.repeat){if(e.target.tagName==='BUTTON')return;e.preventDefault();pauseGame();}});
+  window.addEventListener('keyup',e=>{if(e.code==='ArrowLeft'||e.code==='KeyA')keys.left=false;if(e.code==='ArrowRight'||e.code==='KeyD')keys.right=false;});
+  window.addEventListener('blur',()=>{keys.left=keys.right=false;if(state==='playing')pauseGame();});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden&&state==='playing')pauseGame();});
+  ui.start.addEventListener('click',()=>{if(state==='paused')pauseGame();else startGame();});ui.restart.addEventListener('click',startGame);ui.pause.addEventListener('click',pauseGame);
+  ui.sound.addEventListener('click',()=>{sound=!sound;ui.sound.textContent=sound?'♪ 音效开':'♪ 音效关';ui.sound.setAttribute('aria-pressed',String(sound));if(sound){audioInit();tone(530);}});
+  function step(dt){
+    if(state!=='playing')return;
+    if(keys.left||keys.right){desired=clamp(desired+((keys.right?1:0)-(keys.left?1:0))*420*dt,LEFT+PADDLE_W/2,RIGHT-PADDLE_W/2);paddle=desired;}
+    const prevY=ball.y;ball.x+=ball.vx*dt;ball.y+=ball.vy*dt;
+    if(ball.x-R<LEFT&&ball.vx<0){ball.x=LEFT+R;ball.vx=-ball.vx;tone(230,.035,'sine',.025);burst(ball.x,ball.y,'#6b7890',4);}
+    if(ball.x+R>RIGHT&&ball.vx>0){ball.x=RIGHT-R;ball.vx=-ball.vx;tone(230,.035,'sine',.025);burst(ball.x,ball.y,'#6b7890',4);}
+    if(ball.y-R<TOP&&ball.vy<0){ball.y=TOP+R;ball.vy=-ball.vy;const startX=29+target*123;if(ball.x>=startX&&ball.x<=startX+116){score+=10;burst(ball.x,TOP,'#d9ff68',20);floating(ball.x,105,'+10');target=(target+1+Math.floor(Math.random()*2))%3;flash=.22;tone(740,.13,'triangle',.07);ui.status.textContent='漂亮命中 +10！绿色靶区换位置了。';sync();}else{tone(300,.05,'sine',.035);burst(ball.x,TOP,'#65748d',5);}}
+    if(ball.vy>0&&prevY+R<=PADDLE_Y&&ball.y+R>=PADDLE_Y&&ball.x>=paddle-PADDLE_W/2-R*.5&&ball.x<=paddle+PADDLE_W/2+R*.5){
+      const offset=clamp((ball.x-paddle)/(PADDLE_W/2),-1,1),angle=offset*1.02;const speed=Math.min(410,260+catches*6);
+      ball.y=PADDLE_Y-R;ball.vx=Math.sin(angle)*speed;ball.vy=-Math.cos(angle)*speed;
+      if(Math.abs(ball.vx)<22)ball.vx=offset<0?-22:22;
+      catches++;score++;burst(ball.x,PADDLE_Y,'#d9ff68',9);tone(410+Math.min(catches,16)*14,.075,'triangle',.055);
+      if(catches%5===0){floating(paddle,PADDLE_Y-30,`${catches} 连击`);ui.status.textContent=`连续接住 ${catches} 球！保持节奏。`;}
+      sync();
+    }
+    if(ball.y>H+R)finish();
+  }
+  function roundRect(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r);}
+  function draw(dt){
+    time+=dt;ctx.clearRect(0,0,W,H);ctx.fillStyle='#141a25';ctx.fillRect(0,0,W,H);
+    ctx.strokeStyle='#ffffff05';ctx.lineWidth=1;for(let x=25;x<W;x+=30){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke();}for(let y=18;y<H;y+=30){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+    ctx.fillStyle='#77859c';ctx.font='10px -apple-system,sans-serif';ctx.textAlign='left';ctx.fillText('TARGET ZONE',29,31);ctx.textAlign='right';ctx.fillStyle='#d9ff68';ctx.fillText('命中亮色区域 +10',391,31);
+    for(let i=0;i<3;i++){let x=29+i*123;ctx.shadowBlur=i===target?15:0;ctx.shadowColor='#d9ff6845';ctx.fillStyle=i===target?'#d9ff68':'#283244';roundRect(x,48,116,17,5);ctx.fill();ctx.shadowBlur=0;if(i===target){ctx.fillStyle='#829a47';ctx.beginPath();ctx.moveTo(x+53,71);ctx.lineTo(x+63,71);ctx.lineTo(x+58,76);ctx.fill();}}
+    ctx.strokeStyle='#354056';ctx.beginPath();ctx.moveTo(LEFT,93);ctx.lineTo(LEFT,565);ctx.moveTo(RIGHT,93);ctx.lineTo(RIGHT,565);ctx.stroke();
+    ctx.setLineDash([3,8]);ctx.strokeStyle='#61718a25';ctx.beginPath();ctx.moveTo(LEFT,568);ctx.lineTo(RIGHT,568);ctx.stroke();ctx.setLineDash([]);
+    if(state==='ready'){const y=260+Math.sin(time*1.4)*10;ctx.strokeStyle='#d9ff6816';ctx.setLineDash([4,9]);ctx.beginPath();ctx.moveTo(210,500);ctx.lineTo(290,y);ctx.lineTo(220,95);ctx.stroke();ctx.setLineDash([]);}
+    if(state==='playing'&&!reducedMotion){trail.push({x:ball.x,y:ball.y});if(trail.length>12)trail.shift();}
+    trail.forEach((p,i)=>{ctx.fillStyle=`rgba(217,255,104,${i/trail.length*.17})`;ctx.beginPath();ctx.arc(p.x,p.y,R*(i/trail.length)*.85,0,Math.PI*2);ctx.fill();});
+    ctx.shadowBlur=18;ctx.shadowColor='#d9ff6850';ctx.fillStyle='#e7ffa4';ctx.beginPath();ctx.arc(ball.x,ball.y,R,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;ctx.fillStyle='#ffffff';ctx.beginPath();ctx.arc(ball.x-2,ball.y-2,2,0,Math.PI*2);ctx.fill();
+    ctx.fillStyle='#d9ff68';ctx.shadowBlur=17;ctx.shadowColor='#d9ff6835';roundRect(paddle-PADDLE_W/2,PADDLE_Y,PADDLE_W,13,6);ctx.fill();ctx.shadowBlur=0;ctx.fillStyle='#18220a66';roundRect(paddle-12,PADDLE_Y+5,24,3,2);ctx.fill();
+    ctx.fillStyle='#718099';ctx.font='10px -apple-system,sans-serif';ctx.textAlign='center';ctx.fillText('← 移动挡板 · 控制反弹 →',210,590);
+    const effectDt=state==='paused'?0:dt;
+    particles=particles.filter(p=>p.life>0);particles.forEach(p=>{p.life-=effectDt;p.x+=p.vx*effectDt;p.y+=p.vy*effectDt;p.vy+=120*effectDt;ctx.globalAlpha=Math.max(0,p.life/p.max);ctx.fillStyle=p.color;ctx.beginPath();ctx.arc(p.x,p.y,2,0,Math.PI*2);ctx.fill();});ctx.globalAlpha=1;
+    labels=labels.filter(p=>p.life>0);labels.forEach(p=>{p.life-=effectDt;p.y-=22*effectDt;ctx.globalAlpha=Math.min(1,Math.max(0,p.life*2));ctx.fillStyle=p.color;ctx.font='bold 19px -apple-system,sans-serif';ctx.textAlign='center';ctx.fillText(p.text,p.x,p.y);});ctx.globalAlpha=1;
+    if(flash>0){flash-=effectDt;ctx.fillStyle=`rgba(217,255,104,${Math.max(0,flash)*.15})`;ctx.fillRect(0,0,W,H);}
+  }
+  function frame(stamp){const dt=Math.min(.04,(stamp-last)/1000||0);last=stamp;if(state==='playing'){accumulator+=dt;while(accumulator>=1/240){step(1/240);accumulator-=1/240;if(state!=='playing'){accumulator=0;break;}}}else accumulator=0;draw(dt);requestAnimationFrame(frame);}
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
